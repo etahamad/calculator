@@ -86,15 +86,15 @@ namespace WinFormsApp1
                     break;
 
                 case "-":
-                    ResultTextBox.Text = (ResultValues + Double.Parse(ResultTextBox.Text)).ToString();
+                    ResultTextBox.Text = (ResultValues - Double.Parse(ResultTextBox.Text)).ToString();
                     break;
 
                 case "×":
-                    ResultTextBox.Text = (ResultValues + Double.Parse(ResultTextBox.Text)).ToString();
+                    ResultTextBox.Text = (ResultValues * Double.Parse(ResultTextBox.Text)).ToString();
                     break;
                 
                 case "/":
-                    ResultTextBox.Text = (ResultValues + Double.Parse(ResultTextBox.Text)).ToString();
+                    ResultTextBox.Text = (ResultValues / Double.Parse(ResultTextBox.Text)).ToString();
                     break;
 
                 default:
