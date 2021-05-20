@@ -39,7 +39,7 @@ namespace WinFormsApp1
             this.n5 = new System.Windows.Forms.Button();
             this.n6 = new System.Windows.Forms.Button();
             this.MultiplicationButton = new System.Windows.Forms.Button();
-            this.ClearButton = new System.Windows.Forms.Button();
+            this.BackspaceButton = new System.Windows.Forms.Button();
             this.n1 = new System.Windows.Forms.Button();
             this.n2 = new System.Windows.Forms.Button();
             this.n3 = new System.Windows.Forms.Button();
@@ -151,16 +151,16 @@ namespace WinFormsApp1
             this.MultiplicationButton.UseVisualStyleBackColor = true;
             this.MultiplicationButton.Click += new System.EventHandler(this.OperatorClick);
             // 
-            // ClearButton
+            // BackspaceButton
             // 
-            this.ClearButton.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.ClearButton.Location = new System.Drawing.Point(236, 203);
-            this.ClearButton.Name = "ClearButton";
-            this.ClearButton.Size = new System.Drawing.Size(50, 57);
-            this.ClearButton.TabIndex = 0;
-            this.ClearButton.Text = "C";
-            this.ClearButton.UseVisualStyleBackColor = true;
-            this.ClearButton.Click += new System.EventHandler(this.ClearButton_Click);
+            this.BackspaceButton.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.BackspaceButton.Location = new System.Drawing.Point(236, 203);
+            this.BackspaceButton.Name = "BackspaceButton";
+            this.BackspaceButton.Size = new System.Drawing.Size(50, 57);
+            this.BackspaceButton.TabIndex = 0;
+            this.BackspaceButton.Text = "⌫";
+            this.BackspaceButton.UseVisualStyleBackColor = true;
+            this.BackspaceButton.Click += new System.EventHandler(this.BackspaceButtonClick);
             // 
             // n1
             // 
@@ -280,7 +280,7 @@ namespace WinFormsApp1
             this.Controls.Add(this.LabelCurrentOperation);
             this.Controls.Add(this.ResultTextBox);
             this.Controls.Add(this.EqualButton);
-            this.Controls.Add(this.ClearButton);
+            this.Controls.Add(this.BackspaceButton);
             this.Controls.Add(this.ClearAndResetButton);
             this.Controls.Add(this.PlusButtom);
             this.Controls.Add(this.MinusButton);
@@ -317,7 +317,7 @@ namespace WinFormsApp1
         private System.Windows.Forms.Button n5;
         private System.Windows.Forms.Button n6;
         private System.Windows.Forms.Button MultiplicationButton;
-        private System.Windows.Forms.Button ClearButton;
+        private System.Windows.Forms.Button BackspaceButton;
         private System.Windows.Forms.Button n1;
         private System.Windows.Forms.Button n2;
         private System.Windows.Forms.Button n3;

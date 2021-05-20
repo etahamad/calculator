@@ -72,9 +72,16 @@ namespace WinFormsApp1
             LabelCurrentOperation.Text = "Cleared";
         }
 
-        private void ClearButton_Click(object sender, EventArgs e)
+        private void BackspaceButtonClick(object sender, EventArgs e)
         {
-            ResultTextBox.Text = "0";
+            if ((String.Compare(ResultTextBox.Text, " ") < 0))
+            {
+                ResultTextBox.Text = ResultTextBox.Text.Substring(0, ResultTextBox.Text.Length - 1 + 1);
+            }
+            else
+            {
+                ResultTextBox.Text = ResultTextBox.Text.Substring(0, ResultTextBox.Text.Length - 1);
+            }
         }
 
         private void EqualButtonClick(object sender, EventArgs e)
