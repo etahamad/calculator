@@ -68,7 +68,7 @@ namespace WinFormsApp1
         private void ClearAndResetButton_Click(object sender, EventArgs e)
         {
             ResultTextBox.Text = "0";
-            LabelCurrentOperation.Text = "Resset";
+            LabelCurrentOperation.Text = "Cleared";
         }
 
         private void ClearButton_Click(object sender, EventArgs e)
