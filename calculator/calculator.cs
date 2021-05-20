@@ -15,7 +15,8 @@ namespace WinFormsApp1
         Double ResultValues = 0;
         String OperationPerformed = "";
         bool isOperationPerformed = false;
-        bool isNumberClicked = false;
+        // TODO: Implment LabelCurrentOperation output.
+        //bool isNumberClicked = false;
 
         public Calculator()
         {
