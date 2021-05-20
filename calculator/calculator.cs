@@ -68,13 +68,13 @@ namespace WinFormsApp1
         private void ClearAndResetButton_Click(object sender, EventArgs e)
         {
             ResultTextBox.Text = "0";
+            ResultValues = 0;
             LabelCurrentOperation.Text = "Cleared";
         }
 
         private void ClearButton_Click(object sender, EventArgs e)
         {
             ResultTextBox.Text = "0";
-            ResultValues = 0;
         }
 
         private void EqualButtonClick(object sender, EventArgs e)
