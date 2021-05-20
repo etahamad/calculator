@@ -74,14 +74,26 @@ namespace WinFormsApp1
 
         private void BackspaceButtonClick(object sender, EventArgs e)
         {
-            if ((String.Compare(ResultTextBox.Text, " ") < 0))
+            if (ResultTextBox.Text == "0")
+            {
+                // Do nothing
+            }
+
+            else if (ResultTextBox.Text == "")
+            {
+                ResultTextBox.Text = "0";
+            }
+
+            else if ((String.Compare(ResultTextBox.Text, " ") < 0))
             {
                 ResultTextBox.Text = ResultTextBox.Text.Substring(0, ResultTextBox.Text.Length - 1 + 1);
             }
+
             else
             {
                 ResultTextBox.Text = ResultTextBox.Text.Substring(0, ResultTextBox.Text.Length - 1);
             }
+
         }
 
         private void EqualButtonClick(object sender, EventArgs e)
